@@ -3,7 +3,7 @@ package leet
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class Solution13Test {
+class Solution13Tests {
 
     private val sol = Solution13()
 

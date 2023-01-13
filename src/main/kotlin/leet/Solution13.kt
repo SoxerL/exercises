@@ -2,7 +2,7 @@ package leet
 
 class Solution13 {
 
-    private val romanToIntMapping = mapOf<String, Int>(
+    private val romanToIntMapping = mapOf(
         "I" to 1,
         "IV" to 4,
         "V" to 5,
@@ -21,17 +21,17 @@ class Solution13 {
         var sum = 0
         var index = 0
         while (index < s.length) {
-            /*
-            var currentNumber = romanToIntMapping[s.elementAt(index)]
-            if (romanToIntMapping.contain(s.substring(index, index + 2))) {
-                currentNumber = romanToIntMapping[s.substring(index, index + 2)]
+            var currentNumber = 0
+            if (index + 1 <= s.length) {
+                currentNumber = romanToIntMapping[s.substring(index, index + 1)]!!
+            }
+            if (index + 2 <= s.length && romanToIntMapping.contains(s.substring(index, index + 2))) {
+                currentNumber = romanToIntMapping[s.substring(index, index + 2)]!!
                 ++index
             }
             sum += currentNumber
             ++index
-
-             */
         }
-        return 1
+        return sum
     }
 }
