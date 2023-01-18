@@ -72,7 +72,3 @@ class Solution2 {
         return firstNode
     }
 }
-
-class ListNode(var value: Int) {
-    var next: ListNode? = null
-}
